@@ -3,6 +3,7 @@ local ui = require("harpoon.ui")
 
 -- add file to harpoon menu:
 vim.keymap.set("n", "<leader>a", mark.add_file)
+vim.keymap.set("n", "<leader>ca", mark.clear_all)
 -- open harpoon menu
 vim.keymap.set("n", "<C-e>", ui.toggle_quick_menu)
 
