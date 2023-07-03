@@ -33,6 +33,12 @@ return require('packer').startup(function(use)
   -- git stuff 
   use('tpope/vim-fugitive')
 
+  -- add lua line 
+  use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
 
   -- language server 
   use {

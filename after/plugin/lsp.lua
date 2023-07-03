@@ -27,6 +27,7 @@ lsp.set_preferences({
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
   -- theprimeagen neovim 20:13
+  lsp.buffer_autoformat()
 end)
 
 

@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.keymap.set ("n", "<leader>pv", vim.cmd.Ex)
 
+--dialog error 
+vim.keymap.set("n", "<leader>.", function() vim.diagnostic.open_float(0, {scope="line"})end)
+
 -- add moving while highlighted remap 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
